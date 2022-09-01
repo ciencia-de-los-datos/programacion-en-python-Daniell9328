@@ -11,7 +11,7 @@ Utilice el archivo `data.csv` para resolver las preguntas.
 
 
 """
-
+data=open('data.csv', 'r')
 
 def pregunta_01():
     """
@@ -21,7 +21,9 @@ def pregunta_01():
     214
 
     """
-    return
+    row_2=sum([int(row[2]) for row in data])
+    
+    return row_2
 
 
 def pregunta_02():
