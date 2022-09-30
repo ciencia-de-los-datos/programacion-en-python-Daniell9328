@@ -91,10 +91,43 @@ def pregunta_03():
         ("D", 31),
         ("E", 67),
     ]
-
     """
-    return
 
+    row1 = [row[0] for row in data]
+    row2 = [int(row[1]) for row in data]
+
+    countA = 0
+    countB = 0
+    countC = 0
+    countD = 0
+    countE = 0
+
+    for index, element in enumerate(row1):
+        if element == "A":
+            countA = countA + row2[index]
+            R1 = [element,countA]
+        if element == "B":
+            countB = countB + row2[index]
+            R2 = [element,countB]
+        if element == "C":
+            countC = countC + row2[index]
+            R3 = [element,countC]
+        if element == "D":
+            countD = countD + row2[index]
+            R4 = [element,countD]
+        if element == "E":
+            countE = countE + row2[index]
+            R5 = [element,countE]
+
+    R = [R1, 
+        R2, 
+        R3, 
+        R4,
+        R5]
+
+    R.sort()
+
+    return
 
 def pregunta_04():
     """
