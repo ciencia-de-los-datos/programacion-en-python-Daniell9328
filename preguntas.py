@@ -127,7 +127,7 @@ def pregunta_03():
 
     R.sort()
 
-    return
+    return R
 
 def pregunta_04():
     """
