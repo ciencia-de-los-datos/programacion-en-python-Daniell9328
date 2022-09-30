@@ -105,19 +105,19 @@ def pregunta_03():
     for index, element in enumerate(row1):
         if element == "A":
             countA = countA + row2[index]
-            R1 = [element,countA]
+            R1 = (element,countA)
         if element == "B":
             countB = countB + row2[index]
-            R2 = [element,countB]
+            R2 = (element,countB)
         if element == "C":
             countC = countC + row2[index]
-            R3 = [element,countC]
+            R3 = (element,countC)
         if element == "D":
             countD = countD + row2[index]
-            R4 = [element,countD]
+            R4 = (element,countD)
         if element == "E":
             countE = countE + row2[index]
-            R5 = [element,countE]
+            R5 = (element,countE)
 
     R = [R1, 
         R2, 
