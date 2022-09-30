@@ -26,10 +26,12 @@ def pregunta_01():
     214
 
     """
-    row_2=sum([int(row[2]) for row in data])
-    
-    return row_2
+    sum = [int(line[1]) for line in data]
+    count= 0
+    for value in sum: 
+        count = count + value
 
+    return count
 
 def pregunta_02():
     """
