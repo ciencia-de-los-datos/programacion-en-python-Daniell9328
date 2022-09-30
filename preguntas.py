@@ -41,7 +41,41 @@ def pregunta_02():
     ]
 
     """
-    return
+    row1 = [row[0] for row in data]
+    #display (row1)
+
+    countA = 0
+    countB = 0
+    countC = 0
+    countD = 0
+    countE = 0
+
+    for index in row1:
+        if index == "A":
+            countA = countA + 1 
+            R1 = (index,countA)
+        if index == "B":
+            countB = countB + 1 
+            R2 = (index,countB)
+        if index == "C":
+            countC = countC + 1
+            R3 = (index,countC) 
+        if index == "D":
+            countD = countD + 1
+            R4 = (index,countD) 
+        if index == "E":
+            countE = countE + 1
+            R5 = (index,countE) 
+
+    R = [R1, 
+        R2, 
+        R3, 
+        R4,
+        R5]
+
+    R.sort()
+
+    return R
 
 
 def pregunta_03():
