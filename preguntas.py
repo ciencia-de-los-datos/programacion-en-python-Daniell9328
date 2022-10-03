@@ -11,14 +11,9 @@ Utilice el archivo `data.csv` para resolver las preguntas.
 
 
 """
-#
-# Se descarga el archivo directamente del repo al disco duro.
-#
+
 url = "https://raw.githubusercontent.com/ciencia-de-los-datos/programacion-en-python-Daniell9328/main/data.csv"
 !wget --quiet {url} -P /tmp/
-#
-# Visualiza el contenido del directorio
-#
 !ls -1 /tmp/*
 
 with open("/tmp/data.csv.2","r") as file:
