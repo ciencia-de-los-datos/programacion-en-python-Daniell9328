@@ -21,7 +21,7 @@ url = "https://raw.githubusercontent.com/ciencia-de-los-datos/programacion-en-py
 #
 !ls -1 /tmp/*
 
-with open("/tmp/data.csv","r") as file:
+with open("/tmp/data.csv.2","r") as file:
   data = file.readlines()
 
 data = [line.replace ("\t", ";") for line in data]
