@@ -23,7 +23,7 @@ url = "https://raw.githubusercontent.com/ciencia-de-los-datos/programacion-en-py
 
 with open("/tmp/data.csv","r") as file:
   data = file.readlines()
-  
+
 data = [line.replace ("\t", ";") for line in data]
 data = [line.replace ("\n", "") for line in data]
 data = [line.split(";") for line in data]
