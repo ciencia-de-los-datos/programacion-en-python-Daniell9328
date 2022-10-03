@@ -11,9 +11,19 @@ Utilice el archivo `data.csv` para resolver las preguntas.
 
 
 """
-with open("data.csv", "r") as file:
-  data = file.readlines()
+#
+# Se descarga el archivo directamente del repo al disco duro.
+#
+url = "https://raw.githubusercontent.com/ciencia-de-los-datos/programacion-en-python-Daniell9328/main/data.csv"
+!wget --quiet {url} -P /tmp/
+#
+# Visualiza el contenido del directorio
+#
+!ls -1 /tmp/*
 
+with open("/tmp/data.csv.2","r") as file:
+  data = file.readlines()
+  
 data = [line.replace ("\t", ";") for line in data]
 data = [line.replace ("\n", "") for line in data]
 data = [line.split(";") for line in data]
